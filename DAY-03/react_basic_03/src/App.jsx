@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
 import Person from './components/Person'
+import Sachinnn, { Rohit, Virat } from './components/Cricket'
+import Hello from './components/Hello'
+import Looping from './components/Looping'
+import Random from './components/Random'
+import Evennts from './components/Evennts'
+import NameChange from './components/NameChange'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
+    <div>
       <Person />
-    </>
+      <Sachinnn runs = "100" centuries = "100"/>
+      <Virat />
+      <Rohit />
+      <Hello />
+      <Looping />
+      <Random />
+      <Evennts />
+      <NameChange naam = "Subham"/>
+    </div>
   )
 }
 
